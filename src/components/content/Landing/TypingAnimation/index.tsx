@@ -1,9 +1,9 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './styles.module.scss';
 
-const TypingAnimation = ({ strings }: { strings: string[] }): JSX.Element => {
+const TypingAnimation = ({ strings }: { strings: string[] }) => {
   const typingSpeed = 80;
   const deleteSpeed = 50;
   const displayDuration = 5000;
@@ -18,6 +18,7 @@ const TypingAnimation = ({ strings }: { strings: string[] }): JSX.Element => {
         setIsDeleting(true);
       }, displayDuration);
     } else if (isDeleting && currentText === '') {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsDeleting(false);
       setCurrentStringIndex((prevIndex) => (prevIndex + 1) % strings.length);
     } else {

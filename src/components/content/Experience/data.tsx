@@ -9,7 +9,7 @@ interface IExperienceItem {
   description?: React.ReactNode,
   location: string,
   company: string,
-  icon: JSX.Element,
+  icon: React.ReactNode,
 }
 
 const data: IExperienceItem[] = [

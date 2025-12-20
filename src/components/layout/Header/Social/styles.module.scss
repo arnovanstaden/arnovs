@@ -1,3 +1,5 @@
+@use "src/styles/variables.scss" as *;
+
 .Social {
   display: flex;
   align-items: center;
@@ -7,17 +9,17 @@
     display: flex;
 
     svg {
-      color: $colour-font-primary;
+      color: var(--colour-font-primary);
       transition: 0.2s ease-in-out;
       font-size: 1.1rem;
     }
 
     &:hover svg {
-      color: $colour-blue;
+      color: var(--colour-primary);
     }
 
     &.mail {
-      background-color: $colour-background-secondary;
+      background-color: var(--colour-background-secondary);
       border: 1px solid transparent;
       width: 2.25rem;
       height: 2.25rem;
@@ -26,10 +28,10 @@
       justify-content: center;
 
       &:hover {
-        border-color: $colour-blue;
+        border-color: var(--colour-primary);
 
         svg {
-          color: $colour-font-primary;
+          color: var(--colour-font-primary);
         }
       }
     }

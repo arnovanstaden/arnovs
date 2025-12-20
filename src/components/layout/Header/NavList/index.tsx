@@ -3,7 +3,7 @@
 import useScrollToElement from '@hooks/ui';
 import styles from './styles.module.scss';
 
-const NavList = ({ onClick }: { onClick?: () => void }): JSX.Element => {
+const NavList = ({ onClick }: { onClick?: () => void }) => {
   const { scrollToElement } = useScrollToElement();
 
   const handleClick = (id: string) => {

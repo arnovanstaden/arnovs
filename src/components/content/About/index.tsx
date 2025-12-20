@@ -1,9 +1,8 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
 import Chip from '@components/system/display/Chip';
 import styles from './styles.module.scss';
 import Interests from './Interests';
 
-const About = (): JSX.Element | null => (
+const About = () => (
   <div className={styles.About}>
     <div className={styles.text}>
       <Chip>Overview</Chip>

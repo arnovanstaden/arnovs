@@ -1,10 +1,12 @@
+@use "src/styles/variables.scss" as *;
+
 .ThemeToggle {
   @include reset-button;
   // margin-left: 2rem;
-  color: $colour-font-primary;
+  color: var(--colour-font-primary);
   transition: 0.3s ease-in-out;
 
   &:hover {
-    color: $colour-blue;
+    color: var(--colour-primary);
   }
 }

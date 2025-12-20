@@ -5,7 +5,7 @@ import ThemeToggle from './ThemeToggle';
 import styles from './styles.module.scss';
 import Link from 'next/link';
 
-const Header = (): JSX.Element => (
+const Header = () => (
   <header className={styles.header}>
     <Link href="/" className={styles.name}>
       <Logo size={24} />

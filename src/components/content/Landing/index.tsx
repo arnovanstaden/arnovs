@@ -10,7 +10,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import DescriptionIcon from '@mui/icons-material/Description';
 import LandingImage from '@public/images/landing.png';
 
-const Landing = (): JSX.Element | null => (
+const Landing = ()=> (
   <section className={styles.Landing}>
     <Container>
       <div className={styles.grid}>
@@ -23,7 +23,7 @@ const Landing = (): JSX.Element | null => (
           />
         </div>
         <div className={styles.content}>
-          <Chip>Front End Engineer</Chip>
+          <Chip>Frontend Engineer</Chip>
           <h1 className={styles.name}>Hello, I'm Arno van Staden.</h1>
           <TypingAnimation strings={typingData.landing} />
           <div className={styles.info}>

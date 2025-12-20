@@ -1,16 +1,18 @@
+@use "src/styles/variables.scss" as *;
+
 .Skills {
   .search {
     width: 100%;
     max-width: 350px;
     margin: 0 auto;
     display: block;
-    border: 1px solid $colour-blue;
+    border: 1px solid var(--colour-primary);
     position: relative;
     padding-right: 1rem;
 
     input {
       @include resetInput;
-      color: $colour-font-primary;
+      color: var(--colour-font-primary);
       text-align: center;
       width: 100%;
       display: block;
@@ -39,7 +41,7 @@
 
   .skill {
     display: flex;
-    background-color: $colour-background-secondary;
+    background-color: var(--colour-background-secondary);
     padding: 0.75rem 1.5rem;
     align-items: center;
     transition: 0.3s ease-out;
@@ -57,7 +59,7 @@
     img {
       // width: 1.25rem;
       // height: 1.25rem;
-      fill: $colour-blue;
+      fill: var(--colour-primary);
     }
 
     &:hover {

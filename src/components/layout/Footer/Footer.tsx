@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import typingData from '@data/typings.json';
 
-const Footer = (): JSX.Element => (
+const Footer = () => (
   <Section
     id="contact"
     heading="Get in Touch"

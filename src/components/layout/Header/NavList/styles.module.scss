@@ -1,3 +1,5 @@
+@use "src/styles/variables.scss" as *;
+
 .NavList {
   display: flex;
   align-items: center;
@@ -9,7 +11,7 @@
   }
 
   li {
-    color: $colour-font-primary;
+    color: var(--colour-font-primary);
     font-weight: 500;
     font-size: 1.05rem;
     letter-spacing: 0.5px;
@@ -18,7 +20,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: $colour-blue;
+      background-color: var(--colour-primary);
       opacity: 1;
     }
   }

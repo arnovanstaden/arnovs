@@ -1,3 +1,5 @@
+@use "src/styles/variables.scss" as *;
+
 .MobileNav {
   .mobileButton {
     @include reset-button;
@@ -8,19 +10,19 @@
     align-items: center;
     width: 2rem;
     height: 2rem;
-    background-color: $colour-background-secondary;
+    background-color: var(--colour-background-secondary);
 
     svg {
       font-size: 1.5rem;
-      color: $colour-blue;
+      color: var(--colour-primary);
       transition: 0.3s ease;
     }
 
     &:hover {
-      border-color: $colour-blue;
+      border-color: var(--colour-primary);
 
       svg {
-        color: $colour-font-primary;
+        color: var(--colour-font-primary);
       }
     }
   }
@@ -28,7 +30,7 @@
   .overlay {
     width: 100vw;
     height: 100vh;
-    background-color: rgba($colour-background-secondary, 0.5);
+    background-color: rgba(var(--colour-background-secondary), 0.5);
     backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
@@ -53,8 +55,8 @@
 
     .menu {
       width: 100%;
-      background-color: $colour-background-primary;
-      border-left: 2px solid $colour-blue;
+      background-color: var(--colour-background-primary);
+      border-left: 2px solid var(--colour-primary);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -88,7 +90,7 @@
         .closeButton {
           @include reset-button;
           font-size: 1.5rem;
-          color: $colour-font-primary;
+          color: var(--colour-font-primary);
         }
       }
     }

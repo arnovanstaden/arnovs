@@ -37,15 +37,16 @@ const skills = [
   'Figma',
 ];
 
-const Skills = (): JSX.Element | null => {
+const Skills = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const skillsRef = useRef() as MutableRefObject<HTMLDivElement>;
+  const skillsRef = useRef<HTMLDivElement>(null);
   const getIconPath = (skill: string) => `/images/icons/${skill.toLowerCase().replace(' ', '-')}.svg`;
   const filteredSkills = skills.filter((skill) => skill.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   // Ensure the section height does not jump around when filtering skills
   useEffect(() => {
+    if (!skillsRef.current) return;
     const sectionHeight = skillsRef.current.clientHeight;
     skillsRef.current.style.minHeight = `${sectionHeight}px`;
   }, []);

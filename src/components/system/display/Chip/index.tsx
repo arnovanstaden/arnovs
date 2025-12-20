@@ -7,7 +7,7 @@ interface IProps {
   className?: string;
 }
 
-const Chip = (props: IProps): JSX.Element | null => {
+const Chip = (props: IProps)=> {
   const classes = classNames(
     styles.Chip,
     props.outlined && styles.outlined,

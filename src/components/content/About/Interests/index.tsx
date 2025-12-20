@@ -10,7 +10,7 @@ import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 import TranslateIcon from '@mui/icons-material/Translate';
 
-const Interests = (): JSX.Element | null => (
+const Interests = ()=> (
   <div className={styles.Interests}>
     <FitnessCenterIcon data-tooltip-id="tooltip" data-tooltip-content="Fitness" />
     <AutoStoriesIcon data-tooltip-id="tooltip" data-tooltip-content="Reading" />

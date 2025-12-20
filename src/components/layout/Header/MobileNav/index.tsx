@@ -9,7 +9,7 @@ import classNames from 'classnames';
 import CloseIcon from '@mui/icons-material/Close';
 import ThemeToggle from '../ThemeToggle';
 
-const MobileNav = (): JSX.Element | null => {
+const MobileNav = ()=> {
   const [open, setOpen] = useState(false);
 
   const handleNavToggle = () => setOpen((prev) => !prev);

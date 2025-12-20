@@ -1,7 +1,9 @@
+@use "src/styles/variables.scss" as *;
+
 .Landing {
   height: 100vh;
   width: 100vw;
-  background-color: $colour-background-primary;
+  background-color: var(--colour-background-primary);
   background-size: cover;
 
   .grid {
@@ -57,7 +59,7 @@
         align-items: center;
 
         p {
-          color: $colour-font-secondary;
+          color: var(--colour-font-secondary);
           margin: 0;
           margin-left: 1rem;
         }

@@ -1,9 +1,11 @@
+@use "src/styles/variables.scss" as *;
+
 .Interests {
   display: flex;
   flex-wrap: wrap;
 
   svg {
-    color: $colour-font-primary;
+    color: var(--colour-font-primary);
     font-size: 1.25rem;
     font-weight: 300;
     margin-right: 0.75rem;

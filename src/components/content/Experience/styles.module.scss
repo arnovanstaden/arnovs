@@ -1,16 +1,18 @@
+@use "src/styles/variables.scss" as *;
+
 .Experience {
   padding-left: 0.5rem;
 
   .item {
     position: relative;
-    border-left: 2px solid $colour-font-secondary;
+    border-left: 2px solid var(--colour-font-secondary);
     padding-left: 3rem;
     padding-bottom: 2rem;
 
     .icon {
       width: 2rem;
       height: 2rem;
-      background-color: $colour-blue;
+      background-color: var(--colour-primary);
       display: block;
       position: absolute;
       left: -1rem;
@@ -18,7 +20,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: $colour-font-on-colour;
+      color: --var(colour-font-on-colour);
 
       svg {
         font-size: 1.25rem;
@@ -42,7 +44,7 @@
         }
 
         .location {
-          color: $colour-font-secondary;
+          color: var(--colour-font-secondary);
           display: flex;
           align-items: center;
           gap: 0.25rem;
@@ -89,14 +91,14 @@
               display: inline-block;
               width: 0.5rem;
               height: 0.5rem;
-              background-color: $colour-blue;
+              background-color: var(--colour-primary);
               margin-right: 0.5rem;
               vertical-align: baseline;
             }
           }
 
           p {
-            color: $colour-font-secondary;
+            color: var(--colour-font-secondary);
             margin-left: 1rem;
           }
 
