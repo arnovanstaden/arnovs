@@ -1,36 +1,32 @@
 :root {
-  --colour-primary: #0061F0;
+  --colour-primary: #0061f0;
 
   // Dark Mode (default)
-  --colour-background-primary: #1F2123;
+  --colour-background-primary: #1f2123;
   --colour-background-secondary: #151618;
   --colour-font-primary: #ffffff;
   --colour-font-secondary: #c5cdd3;
-  --colour-font-on-colour: red;
 
   // Light Mode (system preference fallback before JS loads)
   @media screen and (prefers-color-scheme: light) {
-    --colour-background-primary: #F2F2F2;
-    --colour-background-secondary: #E0E0E0;
-    --colour-font-primary: #1F2123;
+    --colour-background-primary: #f2f2f2;
+    --colour-background-secondary: #e0e0e0;
+    --colour-font-primary: #1f2123;
     --colour-font-secondary: #151618;
-    --colour-font-on-colour: red;
   }
 }
 
 // Manual theme control via data attribute (takes precedence over media query)
-[data-theme="light"] {
-  --colour-background-primary: #F2F2F2;
-  --colour-background-secondary: #E0E0E0;
-  --colour-font-primary: #1F2123;
+[data-theme='light'] {
+  --colour-background-primary: #f2f2f2;
+  --colour-background-secondary: #e0e0e0;
+  --colour-font-primary: #1f2123;
   --colour-font-secondary: #151618;
-  --colour-font-on-colour: red;
 }
 
-[data-theme="dark"] {
-  --colour-background-primary: #1F2123;
+[data-theme='dark'] {
+  --colour-background-primary: #1f2123;
   --colour-background-secondary: #151618;
   --colour-font-primary: #ffffff;
   --colour-font-secondary: #c5cdd3;
-  --colour-font-on-colour: red;
 }

@@ -1,4 +1,4 @@
-@use "src/styles/variables.scss" as *;
+@use 'src/styles/variables.scss' as *;
 
 .Chip {
   font-size: 0.8rem;
@@ -8,7 +8,7 @@
   margin: 0;
   user-select: none;
   font-family: $font-heading;
-  color: --var(colour-font-on-colour);
+  color: var(--colour-font-primary);
 
   &.outlined {
     background-color: transparent;

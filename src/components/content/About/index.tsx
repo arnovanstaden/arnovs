@@ -19,9 +19,9 @@ const About = () => (
         forgetting birthdays), because I genuinely enjoy finding simple, elegant solutions.
       </p>
       <p>
-        Outside of work, you’ll find me traveling, lifting at the gym, reading sci-fi, gaming, or
+        Outside of work, you’ll find me travelling, lifting at the gym, reading sci-fi, gaming, or
         providing unpaid tech support to my mom. I thrive in collaborative teams that value
-        ownership, constructive debate, and attention to detail—and I’m happiest building products
+        ownership, constructive debate, and attention to detail, and I’m happiest building products
         people actually love to use.
       </p>
     </div>

@@ -1,4 +1,4 @@
-@use "src/styles/variables.scss" as *;
+@use 'src/styles/variables.scss' as *;
 
 .Button {
   @include reset-button;
@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   padding: 0.5rem 1.25rem;
-  color: --var(colour-font-on-colour);
+  color: var(--colour-font-primary);
   font-size: 0.8rem;
   font-weight: 500;
   font-family: $font-heading;
