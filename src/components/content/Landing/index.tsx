@@ -23,16 +23,16 @@ const Landing = ()=> (
           />
         </div>
         <div className={styles.content}>
-          <Chip>Frontend Engineer</Chip>
+          <Chip>Senior Frontend Engineer (React/TypeScript) </Chip>
           <h1 className={styles.name}>Hello, I'm Arno van Staden.</h1>
-          <TypingAnimation strings={typingData.landing} />
+          <h2 className={styles.tagline}>I ship fast, scalable web apps and love ownership.</h2>
           <div className={styles.info}>
             <Chip outlined>Status</Chip>
             <p>Open to Work.</p>
           </div>
           <div className={styles.info}>
             <Chip outlined>Location</Chip>
-            <p>Berlin | München | Remote (Germany)</p>
+            <p>Berlin | Remote (Germany)</p>
           </div>
           <div className={styles.buttons}>
             <a href="mailto:arno@arnovs.dev" className={styles.mail} target="_blank">

@@ -31,6 +31,7 @@
   &:hover {
     background-color: transparent;
     transition: 0.3s ease;
+    color: var(--colour-primary);
   }
 
   &:focus {
@@ -42,7 +43,6 @@
     background-color: transparent;
     border-color: transparent;
     color: var(--colour-font-primary);
-    ;
 
     &::before,
     &::after {
