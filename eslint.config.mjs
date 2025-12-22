@@ -1,16 +1,11 @@
 import nextVitals from 'eslint-config-next/core-web-vitals';
 import typescriptParser from '@typescript-eslint/parser';
 
-import { defineConfig, globalIgnores } from 'eslint/config'
+import { defineConfig, globalIgnores } from 'eslint/config';
 
 const eslintConfig = defineConfig([
   ...nextVitals,
-  globalIgnores([
-    '.next/**',
-    'out/**',
-    'build/**',
-    'next-env.d.ts',
-  ]),
+  globalIgnores(['.next/**', 'out/**', 'build/**', 'next-env.d.ts']),
   {
     files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
@@ -21,7 +16,7 @@ const eslintConfig = defineConfig([
         ecmaFeatures: {
           jsx: true,
         },
-      }
+      },
     },
     settings: {
       react: {
@@ -42,9 +37,12 @@ const eslintConfig = defineConfig([
       'object-curly-newline': 'off',
       'no-plusplus': 'off',
       'function-paren-newline': 'off',
-      'no-param-reassign': ['error', {
-        props: false,
-      }],
+      'no-param-reassign': [
+        'error',
+        {
+          props: false,
+        },
+      ],
       'no-nested-ternary': 'off',
       'default-param-last': 'off',
       'import/no-cycle': 'off',
@@ -58,8 +56,9 @@ const eslintConfig = defineConfig([
       '@next/next/google-font-display': 'off',
       'no-useless-catch': 'off',
       'react/no-unescaped-entities': 'off',
+      '@typescript-eslint/explicit-module-boundary-types': 'off',
     },
-  }
+  },
 ]);
 
 export default eslintConfig;

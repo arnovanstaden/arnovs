@@ -8,28 +8,37 @@ const NavList = ({ onClick }: { onClick?: () => void }) => {
 
   const handleClick = (id: string) => {
     scrollToElement(id);
-    if (onClick) onClick();
+    if (onClick) {
+      // Delay onClick to allow scroll to start before menu closes
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          onClick();
+        });
+      });
+    }
   };
 
   const items: {
-    id: string,
-    label: string,
-  }[] = [{
-    id: 'about',
-    label: 'About',
-  },
-  {
-    id: 'skills',
-    label: 'Skills',
-  },
-  {
-    id: 'experience',
-    label: 'Experience',
-  },
-  {
-    id: 'contact',
-    label: 'Contact',
-  }];
+    id: string;
+    label: string;
+  }[] = [
+    {
+      id: 'about',
+      label: 'About',
+    },
+    {
+      id: 'skills',
+      label: 'Skills',
+    },
+    {
+      id: 'experience',
+      label: 'Experience',
+    },
+    {
+      id: 'contact',
+      label: 'Contact',
+    },
+  ];
 
   return (
     <ul className={styles.NavList}>

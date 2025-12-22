@@ -12,7 +12,7 @@ const Footer = () => (
     typingAnimationStrings={typingData.contact}
     contentClassName={styles.Footer}
     component="footer"
-  // light
+    // light
   >
     <a href="mailto:arno@arnovs.dev" className={styles.mail} target="_blank">
       <EmailIcon />
@@ -26,10 +26,6 @@ const Footer = () => (
       <a href="https://www.linkedin.com/in/arnovanstaden/" target="_blank">
         <LinkedInIcon />
         LinkedIn
-      </a>
-      <a href="https://arnovs.medium.com" target="_blank">
-        <img src="/images/icons/medium.svg" alt="Medium Logo" width={24} height={24} />
-        Medium
       </a>
     </div>
   </Section>

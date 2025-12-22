@@ -4,17 +4,25 @@ import TranslateIcon from '@mui/icons-material/Translate';
 import SchoolIcon from '@mui/icons-material/School';
 
 interface IExperienceItem {
-  year: string,
-  title: string,
-  description?: React.ReactNode,
-  location: string,
-  company: string,
-  icon: React.ReactNode,
+  year: string;
+  title: string;
+  description?: React.ReactNode;
+  location: string;
+  company: string;
+  icon: React.ReactNode;
 }
 
 const data: IExperienceItem[] = [
   {
-    year: 'Jul 2023 - Present',
+    year: 'Sept 2024 - Present',
+    title: 'Senior Frontend Engineer',
+    location: 'Berlin, Germany',
+    icon: <CodeIcon />,
+    company: 'Zendesk (AI Agents Advanced)',
+    description: <ul></ul>,
+  },
+  {
+    year: 'Jul 2023 - Sept 2024',
     title: 'Senior Frontend Engineer',
     location: 'Berlin, Germany',
     icon: <CodeIcon />,
@@ -23,11 +31,18 @@ const data: IExperienceItem[] = [
       <ul>
         <li>
           <span>Elevated Leadership</span>
-          <p>Stepped into a prominent role in technology selection, work prioritization, and backlog management, often resembling the responsibilities of a product owner or manager for web-based projects.</p>
+          <p>
+            Stepped into a prominent role in technology selection, work prioritization, and backlog
+            management, often resembling the responsibilities of a product owner or manager for
+            web-based projects.
+          </p>
         </li>
         <li>
           <span>Strategic Impact</span>
-          <p>Played a crucial role in shaping Tandem's web presence, ensuring not only maintenance but also the enhancement of the platform's functionality and user experience.</p>
+          <p>
+            Played a crucial role in shaping Tandem's web presence, ensuring not only maintenance
+            but also the enhancement of the platform's functionality and user experience.
+          </p>
         </li>
       </ul>
     ),
@@ -42,22 +57,37 @@ const data: IExperienceItem[] = [
       <ul>
         <li>
           <span>Website & Web App Overhaul</span>
-          <p>Led the refactoring of the company website and oversaw the complete redevelopment & redesign of the web application, supporting thousands of daily users with the latest web technologies.</p>
+          <p>
+            Led the refactoring of the company website and oversaw the complete redevelopment &
+            redesign of the web application, supporting thousands of daily users with the latest web
+            technologies.
+          </p>
         </li>
 
         <li>
           <span>Admin Dashboard Refactoring</span>
-          <p>Rebuilt a rudimentary admin interface into a user-centric full-stack application from the ground up, delivering a more intuitive, modern, and user-friendly experience.</p>
+          <p>
+            Rebuilt a rudimentary admin interface into a user-centric full-stack application from
+            the ground up, delivering a more intuitive, modern, and user-friendly experience.
+          </p>
         </li>
 
         <li>
           <span>Cross-Functional Collaboration</span>
-          <p>Worked hand-in-hand with product, design, and marketing teams, transforming creative concepts into technical solutions using a diverse tech stack like TypeScript, React, and Next.js.</p>
+          <p>
+            Worked hand-in-hand with product, design, and marketing teams, transforming creative
+            concepts into technical solutions using a diverse tech stack like TypeScript, React, and
+            Next.js.
+          </p>
         </li>
 
         <li>
           <span>Rapid Prototyping</span>
-          <p>Led the swift development of MVPs for experimentation and feasibility testing. In addition, implemented web-based solutions for special, niche projects and use cases, thereby maximising the potential of the web platform.</p>
+          <p>
+            Led the swift development of MVPs for experimentation and feasibility testing. In
+            addition, implemented web-based solutions for special, niche projects and use cases,
+            thereby maximising the potential of the web platform.
+          </p>
         </li>
       </ul>
     ),
@@ -70,27 +100,43 @@ const data: IExperienceItem[] = [
       <ul>
         <li>
           <span>Comprehensive Development</span>
-          <p>Managed the complete development lifecycle, ensuring websites and applications were responsive, cross-browser compatible, and seamlessly integrated with robust backend systems.</p>
+          <p>
+            Managed the complete development lifecycle, ensuring websites and applications were
+            responsive, cross-browser compatible, and seamlessly integrated with robust backend
+            systems.
+          </p>
         </li>
 
         <li>
           <span>Extensive Portfolio Development</span>
-          <p>Delivered 45+ diverse websites and applications leveraging Next.js, React, TypeScript, and CSS modules.</p>
+          <p>
+            Delivered 45+ diverse websites and applications leveraging Next.js, React, TypeScript,
+            and CSS modules.
+          </p>
         </li>
 
         <li>
           <span>Building Client Trust</span>
-          <p>Fostered enduring partnerships with 40+ clients, with repeat engagements underscoring consistent quality and trustworthiness.</p>
+          <p>
+            Fostered enduring partnerships with 40+ clients, with repeat engagements underscoring
+            consistent quality and trustworthiness.
+          </p>
         </li>
 
         <li>
           <span>Client-Centric Solutions</span>
-          <p>Worked closely with clients to align projects with their brand and objectives, translating designs into fully functional digital platforms.</p>
+          <p>
+            Worked closely with clients to align projects with their brand and objectives,
+            translating designs into fully functional digital platforms.
+          </p>
         </li>
 
         <li>
           <span>Ongoing Improvements</span>
-          <p>Consistently optimized and expanded applications, and provided expert technical consultation on application design and feasibility.</p>
+          <p>
+            Consistently optimized and expanded applications, and provided expert technical
+            consultation on application design and feasibility.
+          </p>
         </li>
       </ul>
     ),
@@ -103,7 +149,12 @@ const data: IExperienceItem[] = [
     location: 'Hanoi, Vietnam',
     icon: <TranslateIcon />,
     company: 'Apax English',
-    description: <p>I traveled throughout South-East Asia, obtaining my TEFL certificate, and teaching English as a second language to Vietnamese students.</p>,
+    description: (
+      <p>
+        I traveled throughout South-East Asia, obtaining my TEFL certificate, and teaching English
+        as a second language to Vietnamese students.
+      </p>
+    ),
   },
   {
     year: '2015 - 2017',
