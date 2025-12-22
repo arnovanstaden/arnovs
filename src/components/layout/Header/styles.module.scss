@@ -1,4 +1,4 @@
-@use "src/styles/variables.scss" as *;
+@use 'src/styles/variables.scss' as *;
 
 .header {
   display: flex;
@@ -28,20 +28,6 @@
     span {
       font-weight: 600;
       margin-left: 1rem;
-    }
-  }
-
-  .desktopNav {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  @media (max-width: $breakpoint-md) {
-    .desktopNav {
-      display: none;
     }
   }
 }
