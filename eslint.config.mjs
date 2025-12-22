@@ -32,7 +32,8 @@ const eslintConfig = defineConfig([
       },
     },
     rules: {
-      quotes: [2, 'single'],
+      // Prettier handles formatting, so we disable conflicting rules
+      quotes: 'off', // Prettier handles quotes
       'max-len': 'off',
       radix: 'off',
       'import/no-extraneous-dependencies': 'off',

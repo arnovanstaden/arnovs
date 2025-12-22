@@ -32,7 +32,9 @@
     "@types/react-dom": "19",
     "eslint": "^9.39.2",
     "eslint-config-next": "^16.1.0",
+    "eslint-config-prettier": "^10.1.8",
     "husky": "9.1.7",
+    "prettier": "^3.7.4",
     "sass": "1.97.1",
     "typescript": "5"
   }
