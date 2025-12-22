@@ -32,7 +32,7 @@ const Landing = ()=> (
           </div>
           <div className={styles.info}>
             <Chip outlined>Location</Chip>
-            <p>Berlin | Remote (Germany)</p>
+            <p>Berlin | Remote (Germany/EU)</p>
           </div>
           <div className={styles.buttons}>
             <a href="mailto:arno@arnovs.dev" className={styles.mail} target="_blank">

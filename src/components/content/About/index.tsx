@@ -7,43 +7,34 @@ const About = () => (
     <div className={styles.text}>
       <Chip>Overview</Chip>
       <p>
-        So, my top three things in life? Easy:
-        <br /> 1. Fiddling around with JavaScript,
-        <br />  2. Hitting the road and exploring new spots, and
-        <br /> 3. That first cup of coffee in the morning
+        Senior Frontend Engineer with a strong focus on <span>TypeScript</span> & <span>React</span>
+        , experienced in building and scaling production web applications used by thousands of
+        users. I enjoy taking ownership, working closely with product and design, and turning fuzzy
+        ideas into fast, reliable, user-friendly interfaces.
       </p>
-
       <p>
-        I got hooked on computers with the good ol' Windows 98. Remember the sound of dial-up internet? That was basically my childhood's theme song. Good times.
+        I’ve been hooked on computers since the Windows 98 and dial-up days, and I still approach
+        development with the same curiosity—constantly tinkering, experimenting, and improving. I
+        often reach for code to solve everyday problems (yes, even building small web apps to avoid
+        forgetting birthdays), because I genuinely enjoy finding simple, elegant solutions.
       </p>
-
       <p>
-        When I’m not glued to the screen, I’m either leveling up in some console game, pumping iron in the gym, getting lost in a good sci-fi book or offering tech support for my mom’s phone. But even during my downtime, part of my brain is always dreaming up cool digital stuff that people would love to use.
-      </p>
-
-      <p>
-        Another thing about me? I'm that guy who turns to code for even the smallest hitches in life. Forgot someone's birthday one too many times? Yeah, I built a web app for that. It's the joy of tinkering and coming up with nifty digital solutions to those everyday “oops” moments that keeps the dev fire alive in me.
-      </p>
-
-      <p>
-        But hey, it’s not all about coding. It’s the laughs, the challenges, and those endless debates about the tiniest details. You in?
+        Outside of work, you’ll find me traveling, lifting at the gym, reading sci-fi, gaming, or
+        providing unpaid tech support to my mom. I thrive in collaborative teams that value
+        ownership, constructive debate, and attention to detail—and I’m happiest building products
+        people actually love to use.
       </p>
     </div>
+
     <div className={styles.extra}>
       <div className={styles.block}>
-        <Chip>Stats</Chip>
+        <Chip>Experience</Chip>
         <div className={styles.stats}>
           <div className={styles.stat}>
-            <span>05+</span>
-            <p>Years <br /> Experience</p>
-          </div>
-          <div className={styles.stat}>
-            <span>60+</span>
-            <p>Projects <br /> Completed</p>
-          </div>
-          <div className={styles.stat}>
-            <span>5k+</span>
-            <p>Commits <br />on GitHub</p>
+            <span>07+</span>
+            <p>
+              Years <br /> Experience
+            </p>
           </div>
         </div>
       </div>
@@ -60,7 +51,7 @@ const About = () => (
           </li>
           <li>
             <span />
-            German <span>- B1(ish)</span>
+            German <span>- B1</span>
           </li>
         </ul>
       </div>

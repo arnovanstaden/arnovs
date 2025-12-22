@@ -1,4 +1,4 @@
-@use "src/styles/variables.scss" as *;
+@use 'src/styles/variables.scss' as *;
 
 .About {
   display: grid;
@@ -12,16 +12,12 @@
 
     p {
       span {
-        font-weight: 300;
-        color: var(--colour-font-secondary);
+        font-weight: 500;
+        color: var(--colour-primary);
         white-space: pre-wrap;
         font-family: $font-heading;
         font-size: 0.9rem;
         letter-spacing: -0.5px;
-
-        span {
-          font-weight: 600;
-        }
       }
 
       a {
@@ -84,8 +80,8 @@
     }
   }
 
-  .text> :first-child,
-  .block> :first-child {
+  .text > :first-child,
+  .block > :first-child {
     margin-bottom: 1.5rem;
   }
 
