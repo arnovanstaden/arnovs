@@ -9,10 +9,9 @@ const Footer = () => (
   <Section
     id="contact"
     heading="Get in Touch"
-    typingAnimationStrings={typingData.contact}
     contentClassName={styles.Footer}
     component="footer"
-    // light
+    subheading="Interested in building thoughtful, scalable products together? Let’s talk."
   >
     <a href="mailto:arno@arnovs.dev" className={styles.mail} target="_blank">
       <EmailIcon />
