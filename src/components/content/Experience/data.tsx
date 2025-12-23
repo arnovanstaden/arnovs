@@ -18,8 +18,46 @@ const data: IExperienceItem[] = [
     title: 'Senior Frontend Engineer',
     location: 'Berlin, Germany',
     icon: <CodeIcon />,
-    company: 'Zendesk (AI Agents Advanced)',
-    description: <ul></ul>,
+    company: 'Zendesk - AI Agents Advanced (Formerly Ultimate AI)',
+    description: (
+      <ul>
+        <li>
+          <span>Cross-Functional AI Feature Development</span>
+          <p>
+            Collaborated closely with Design, Product, and AI engineers to build and ship AI-powered
+            features, translating complex requirements into scalable, user-friendly frontend
+            solutions within Zendesk’s product ecosystem.
+          </p>
+        </li>
+
+        <li>
+          <span>UI Library & Design System Migration (Owner)</span>
+          <p>
+            Owned and led the migration of existing applications to Zendesk’s shared UI library and
+            design system, driving consistency, accessibility, and long-term maintainability
+            following the post-acquisition transition.
+          </p>
+        </li>
+
+        <li>
+          <span>Testing & Quality Enablement</span>
+          <p>
+            Proactively introduced and scaled frontend testing practices, including unit and
+            end-to-end tests, helping establish quality standards required in a large corporate
+            environment and improving confidence in ongoing development and releases.
+          </p>
+        </li>
+
+        <li>
+          <span>Mentorship & Technical Leadership</span>
+          <p>
+            Mentored junior engineers through code reviews, pairing, and day-to-day technical
+            guidance, contributing to improved code quality, shared ownership, and overall team
+            growth.
+          </p>
+        </li>
+      </ul>
+    ),
   },
   {
     year: 'Jul 2023 - Sept 2024',
