@@ -10,22 +10,20 @@ import EmailIcon from '@mui/icons-material/Email';
 import DescriptionIcon from '@mui/icons-material/Description';
 import LandingImage from '@public/images/landing.png';
 
-const Landing = ()=> (
+const Landing = () => (
   <section className={styles.Landing}>
     <Container>
       <div className={styles.grid}>
         <div className={styles.image}>
-          <Image
-            src={LandingImage}
-            alt="Arno van Staden"
-            priority
-            quality={60}
-          />
+          <Image src={LandingImage} alt="Arno van Staden" priority quality={60} />
         </div>
         <div className={styles.content}>
           <Chip>Senior Frontend Engineer (React/TypeScript) </Chip>
-          <h1 className={styles.name}>Hello, I'm Arno van Staden.</h1>
-          <h2 className={styles.tagline}>I ship fast, scalable web apps and love ownership.</h2>
+          <h1>Hello, I'm Arno van Staden.</h1>
+          <h2>
+            I ship fast, scalable web products and AI-powered features, taking full ownership from
+            idea to production.
+          </h2>
           <div className={styles.info}>
             <Chip outlined>Status</Chip>
             <p>Open to Work.</p>
