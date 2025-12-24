@@ -1,44 +1,39 @@
 'use client';
 
-import useScrollToElement from '@hooks/ui';
 import styles from './styles.module.scss';
+import Link from 'next/link';
 
-const NavList = ({ onClick }: { onClick?: () => void }): JSX.Element => {
-  const { scrollToElement } = useScrollToElement();
-
-  const handleClick = (id: string) => {
-    scrollToElement(id);
-    if (onClick) onClick();
-  };
-
+const NavList = ({ onClick }: { onClick?: () => void }) => {
   const items: {
-    id: string,
-    label: string,
-  }[] = [{
-    id: 'about',
-    label: 'About',
-  },
-  {
-    id: 'skills',
-    label: 'Skills',
-  },
-  {
-    id: 'experience',
-    label: 'Experience',
-  },
-  {
-    id: 'contact',
-    label: 'Contact',
-  }];
+    id: string;
+    label: string;
+  }[] = [
+    {
+      id: 'about',
+      label: 'About',
+    },
+    {
+      id: 'skills',
+      label: 'Skills',
+    },
+    {
+      id: 'experience',
+      label: 'Experience',
+    },
+    {
+      id: 'contact',
+      label: 'Contact',
+    },
+  ];
 
   return (
-    <ul className={styles.NavList}>
+    <nav className={styles.NavList}>
       {items.map((item) => (
-        <li key={item.id} onClick={() => handleClick(item.id)}>
+        <Link key={item.id} href={`#${item.id}`} onClick={onClick}>
           {item.label}
-        </li>
+        </Link>
       ))}
-    </ul>
+    </nav>
   );
 };
 

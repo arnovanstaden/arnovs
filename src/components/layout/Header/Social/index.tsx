@@ -3,7 +3,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import classNames from 'classnames';
 
-const Social = ({ className }: { className?: string }): JSX.Element => (
+const Social = ({ className }: { className?: string }) => (
   <nav className={classNames(styles.Social, className)}>
     <a href="https://github.com/arnovanstaden" target="blank" aria-label="GitHub">
       <GitHubIcon />

@@ -37,7 +37,7 @@ const fontClasses = classNames(
   sourceSansPro.variable,
 );
 
-const RootLayout = ({ children }: { children: React.ReactNode }): JSX.Element => (
+const RootLayout = ({ children }: { children: React.ReactNode }) => (
   <html lang="en" className={fontClasses}>
     <body>
       <ThemeProvider>

@@ -1,15 +1,17 @@
+@use 'src/styles/variables.scss' as *;
+
 .NavList {
   display: flex;
   align-items: center;
   gap: 1rem;
   @include resetList;
 
-  &:hover li {
+  &:hover a {
     opacity: 0.6;
   }
 
-  li {
-    color: $colour-font-primary;
+  a {
+    color: var(--colour-font-primary);
     font-weight: 500;
     font-size: 1.05rem;
     letter-spacing: 0.5px;
@@ -18,7 +20,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: $colour-blue;
+      background-color: var(--colour-primary);
       opacity: 1;
     }
   }

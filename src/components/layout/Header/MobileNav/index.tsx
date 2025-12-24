@@ -9,18 +9,15 @@ import classNames from 'classnames';
 import CloseIcon from '@mui/icons-material/Close';
 import ThemeToggle from '../ThemeToggle';
 
-const MobileNav = (): JSX.Element | null => {
+const MobileNav = () => {
   const [open, setOpen] = useState(false);
 
   const handleNavToggle = () => setOpen((prev) => !prev);
 
-  const classes = classNames(
-    styles.MobileNav,
-    open && styles.open,
-  );
+  const classes = classNames(styles.MobileNav, open && styles.open);
 
   return (
-    <nav className={classes}>
+    <div className={classes}>
       <button
         className={styles.mobileButton}
         onClick={() => handleNavToggle()}
@@ -28,10 +25,7 @@ const MobileNav = (): JSX.Element | null => {
       >
         <MenuIcon />
       </button>
-      <div
-        className={styles.overlay}
-        onClick={() => handleNavToggle()}
-      />
+      <div className={styles.overlay} onClick={() => handleNavToggle()} />
       <div className={styles.drawer}>
         <div className={styles.menu}>
           <div className={styles.top}>
@@ -49,7 +43,7 @@ const MobileNav = (): JSX.Element | null => {
           <Social className={styles.social} />
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 

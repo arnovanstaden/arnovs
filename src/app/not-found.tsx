@@ -2,7 +2,7 @@ import Button from '@components/system/Input/Button';
 import styles from './page.module.scss';
 import Link from 'next/link';
 
-const NotFoundPage = (): JSX.Element => (
+const NotFoundPage = () => (
   <section className={styles.NotFoundPage}>
     <div className={styles.text}>
       <h1>404 | Page Not Found</h1>

@@ -1,30 +1,28 @@
+@use 'src/styles/variables.scss' as *;
+
 .About {
   display: grid;
   grid-template-columns: 5fr 2fr;
   gap: 2.5rem;
 
   .text {
-    border-right: 1.75px solid $colour-blue;
+    border-right: 1.75px solid var(--colour-primary);
     padding-right: 2rem;
     text-align: justify;
 
     p {
       span {
-        font-weight: 300;
-        color: $colour-font-secondary;
+        font-weight: 500;
+        color: var(--colour-primary);
         white-space: pre-wrap;
         font-family: $font-heading;
         font-size: 0.9rem;
         letter-spacing: -0.5px;
-
-        span {
-          font-weight: 600;
-        }
       }
 
       a {
         font-weight: 500;
-        color: $colour-blue;
+        color: var(--colour-primary);
       }
     }
   }
@@ -49,7 +47,7 @@
           p {
             font-size: 0.9rem;
             margin: 0;
-            color: $colour-font-secondary;
+            color: var(--colour-font-secondary);
           }
         }
       }
@@ -68,22 +66,22 @@
           i {
             width: 0.5rem;
             height: 0.5rem;
-            background-color: $colour-blue;
+            background-color: var(--colour-primary);
             display: block;
             margin-right: 0.5rem;
           }
 
           span {
             font-weight: 300;
-            color: $colour-font-secondary;
+            color: var(--colour-font-secondary);
           }
         }
       }
     }
   }
 
-  .text> :first-child,
-  .block> :first-child {
+  .text > :first-child,
+  .block > :first-child {
     margin-bottom: 1.5rem;
   }
 
@@ -91,7 +89,7 @@
     grid-template-columns: 1fr;
 
     .text {
-      border-bottom: 1.75px solid $colour-blue;
+      border-bottom: 1.75px solid var(--colour-primary);
       border-right: none;
       padding-right: 0;
     }

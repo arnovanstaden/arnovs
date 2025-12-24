@@ -22,10 +22,10 @@ interface SectionProps {
   /**
    * A custom HTML tag to render instead of the default <section /> tag.
    */
-  component?: keyof JSX.IntrinsicElements
+  component?: keyof React.JSX.IntrinsicElements
 }
 
-const Section = (props: SectionProps): JSX.Element => {
+const Section = (props: SectionProps) => {
   const classes = ClassNames(
     styles.Section,
     props.light && styles.light,

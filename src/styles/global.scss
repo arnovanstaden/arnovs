@@ -1,18 +1,5 @@
-:root {
-  --colour-background-primary: #151618;
-  --colour-background-secondary: #1F2123;
-  --colour-font-primary: #ffffff;
-  --colour-font-secondary: #c5cdd3;
-  --colour-primary: #0061F0;
-}
-
-[data-theme="light"] {
-  --colour-background-primary: #F2F2F2;
-  --colour-background-secondary: #E0E0E0;
-  --colour-font-primary: #151618;
-  --colour-font-secondary: #1F2123;
-  --colour-primary: #0061F0
-}
+@use "./theme.scss" as *;
+@use "./variables.scss" as *;
 
 * {
   box-sizing: border-box;
@@ -24,13 +11,13 @@ html {
 }
 
 body {
-  background-color: $colour-background-primary;
+  background-color: var(--colour-background-primary);
   font-family: $font-body;
   font-size: 1rem;
   padding: 0;
   margin: 0;
   width: 100%;
-  color: $colour-font-primary;
+  color: var(--colour-font-primary);
   transition: 0.3s ease-out;
   overflow-x: hidden;
   height: 100vh;
@@ -51,17 +38,17 @@ a {
   width: 6px;
 
   &-track {
-    background: $colour-background-primary;
+    background: var(--colour-background-primary);
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   }
 
   &-thumb {
-    background: $colour-blue;
+    background: var(--colour-primary);
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
     transition: 0.4s ease-in-out;
 
     &:hover {
-      background: $colour-font-primary;
+      background: var(--colour-font-primary);
     }
   }
 }

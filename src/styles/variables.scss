@@ -1,21 +1,12 @@
 // FONTS
 $font-heading: var(--font-family-sourceCodePro),
-Tahoma,
-Geneva,
-sans-serif;
+  Tahoma,
+  Geneva,
+  sans-serif;
 $font-body: var(--font-family-sourceSansPro),
-Tahoma,
-Geneva,
-sans-serif;
-
-// COLOURS
-
-$colour-blue: var(--colour-primary);
-$colour-background-primary: var(--colour-background-primary);
-$colour-background-secondary: var(--colour-background-secondary);
-$colour-font-primary: var(--colour-font-primary);
-$colour-font-secondary: var(--colour-font-secondary);
-$colour-font-on-colour: #ffffff;
+  Tahoma,
+  Geneva,
+  sans-serif;
 
 // BREAKPOINTS
 $breakpoint-xs: 600px;
@@ -23,3 +14,43 @@ $breakpoint-sm: 769px;
 $breakpoint-md: 991px;
 $breakpoint-lg: 1200px;
 $breakpoint-xl: 1440px;
+
+// MIXINS
+@mixin boxShadow {
+  -moz-box-shadow: inset 0 0 1.5rem var(--colour-background-primary);
+  -webkit-box-shadow: inset 0 0 1.5rem var(--colour-background-primary);
+  box-shadow: inset 0 0 1.5rem var(--colour-background-primary);
+}
+
+@mixin resetList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-button {
+  background-color: unset;
+  border: none;
+  padding: 0;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@mixin resetInput {
+  border: none;
+  background: transparent;
+  letter-spacing: 0.5px;
+  outline: none;
+  width: 100%;
+  overflow: hidden;
+  resize: none;
+  font-size: 16px;
+  border-radius: 0;
+  font-family: $font-body;
+
+  &::-webkit-autofill {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+}

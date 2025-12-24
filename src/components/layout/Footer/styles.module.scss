@@ -1,3 +1,5 @@
+@use "src/styles/variables.scss" as *;
+
 .Footer {
   display: flex;
   align-items: center;
@@ -6,7 +8,7 @@
 
   .mail {
     display: flex;
-    background-color: $colour-background-primary;
+    background-color: var(--colour-background-primary);
     padding: 1.25rem 3rem;
     align-items: center;
     transition: 0.3s ease-in-out;
@@ -14,15 +16,15 @@
 
     svg {
       font-size: 1.25rem;
-      color: $colour-blue;
+      color: var(--colour-primary);
       transition: 0.3s ease-in-out;
     }
 
     &:hover {
-      background-color: $colour-blue;
+      background-color: var(--colour-primary);
 
       svg {
-        color: $colour-font-primary;
+        color: var(--colour-font-primary);
       }
     }
   }
@@ -41,7 +43,7 @@
 
       svg {
         font-size: 1.5rem;
-        color: $colour-blue;
+        color: var(--colour-primary);
         margin-right: 0.5rem;
       }
 

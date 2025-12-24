@@ -4,7 +4,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import WorkIcon from '@mui/icons-material/Work';
 import data from './data';
 
-const Experience = (): JSX.Element => (
+const Experience = () => (
   <div className={styles.Experience}>
     {data.map((item, idx) => (
       <div key={idx} className={styles.item}>

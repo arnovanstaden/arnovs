@@ -1,16 +1,18 @@
+@use 'src/styles/variables.scss' as *;
+
 .Chip {
   font-size: 0.8rem;
-  background-color: $colour-blue;
+  background-color: var(--colour-primary);
   padding: 0.3rem 1rem;
   display: inline-block;
   margin: 0;
   user-select: none;
   font-family: $font-heading;
-  color: $colour-font-on-colour;
+  color: var(--colour-font-primary);
 
   &.outlined {
     background-color: transparent;
-    border: 1px solid $colour-blue;
-    color: $colour-font-primary;
+    border: 1px solid var(--colour-primary);
+    color: var(--colour-font-primary);
   }
 }

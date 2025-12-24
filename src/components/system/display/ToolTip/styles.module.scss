@@ -1,8 +1,10 @@
+@use "src/styles/variables.scss" as *;
+
 .Tooltip {
-  border: 1px solid $colour-blue;
+  border: 1px solid var(--colour-primary);
 
   .arrow {
-    border-right: 1px solid $colour-blue;
-    border-bottom: 1px solid $colour-blue;
+    border-right: 1px solid var(--colour-primary);
+    border-bottom: 1px solid var(--colour-primary);
   }
 }

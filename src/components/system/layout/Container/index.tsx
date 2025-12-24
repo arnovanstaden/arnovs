@@ -1,6 +1,6 @@
 import styles from './styles.module.scss';
 
-const Container = ({ children }: { children: React.ReactNode }): JSX.Element | null => (
+const Container = ({ children }: { children: React.ReactNode })=> (
   <div className={styles.Container}>
     {children}
   </div>

@@ -8,7 +8,7 @@ interface IProps {
   outlined?: boolean;
 }
 
-const Button = ({ children, icon, outlined }: IProps): JSX.Element => {
+const Button = ({ children, icon, outlined }: IProps) => {
   const classes = ClassNames(
     styles.Button,
     outlined ? styles.outlined : null,

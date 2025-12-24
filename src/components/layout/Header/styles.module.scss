@@ -1,3 +1,5 @@
+@use 'src/styles/variables.scss' as *;
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -11,7 +13,7 @@
   z-index: 500;
 
   .name {
-    color: $colour-font-primary;
+    color: var(--colour-font-primary);
     font-size: 1.2rem;
     font-weight: 400;
     display: flex;

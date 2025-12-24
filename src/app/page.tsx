@@ -5,7 +5,7 @@ import Skills from '@components/content/Skills';
 import Section from '@components/layout/Section';
 import typingData from '@data/typings.json';
 
-const HomePage = (): JSX.Element => (
+const HomePage = () => (
   <main>
     <Landing />
     <Section

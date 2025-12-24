@@ -1,13 +1,15 @@
+@use 'src/styles/variables.scss' as *;
+
 .Button {
   @include reset-button;
-  background-color: $colour-blue;
-  border: 2px solid $colour-blue;
+  background-color: var(--colour-primary);
+  border: 2px solid var(--colour-primary);
   padding: 0;
   position: relative;
   display: flex;
   align-items: center;
   padding: 0.5rem 1.25rem;
-  color: $colour-font-on-colour;
+  color: var(--colour-font-primary);
   font-size: 0.8rem;
   font-weight: 500;
   font-family: $font-heading;
@@ -29,6 +31,7 @@
   &:hover {
     background-color: transparent;
     transition: 0.3s ease;
+    color: var(--colour-primary);
   }
 
   &:focus {
@@ -39,8 +42,7 @@
     padding: 0.7rem 1.25rem;
     background-color: transparent;
     border-color: transparent;
-    color: $colour-font-primary;
-    ;
+    color: var(--colour-font-primary);
 
     &::before,
     &::after {
@@ -51,14 +53,14 @@
     }
 
     &::before {
-      border-top: 2px solid $colour-blue;
-      border-bottom: 2px solid $colour-blue;
+      border-top: 2px solid var(--colour-primary);
+      border-bottom: 2px solid var(--colour-primary);
       transform: scale3d(0, 1, 1);
     }
 
     &::after {
-      border-left: 2px solid $colour-blue;
-      border-right: 2px solid $colour-blue;
+      border-left: 2px solid var(--colour-primary);
+      border-right: 2px solid var(--colour-primary);
       transform: scale3d(1, 0, 1); // Shrink only height
     }
 

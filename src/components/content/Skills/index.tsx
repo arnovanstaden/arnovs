@@ -1,51 +1,57 @@
 'use client';
 
-import { MutableRefObject, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styles from './styles.module.scss';
 import CancelIcon from '@mui/icons-material/Cancel';
+import Chip from '@components/system/display/Chip';
 
-const skills = [
+const coreSkills = ['TypeScript', 'React', 'Next.js', 'Node.js'];
+
+const productionSkills = [
   'HTML',
   'CSS',
   'SASS',
   'JavaScript',
-  'TypeScript',
-  'SQL',
-  'GraphQL',
-  'REST',
-  'JQuery',
-  'React',
-  'Next.js',
-  'Node.js',
-  'Astro',
   'React Query',
-  'StoryBook',
-  'Express.js',
-  'Material UI',
+  'REST',
+  'GraphQL',
+  'SQL',
   'Jest',
-  'GIT',
-  'MongoDB',
-  'Firebase',
-  'Supabase',
-  'Google Cloud',
-  'AWS',
-  'Vercel',
-  'Sanity',
-  'Contentful',
-  'Jira',
-  'Confluence',
-  'Figma',
+  'Playwright',
+  'Storybook',
+  'Express.js',
+  'Git',
 ];
 
-const Skills = (): JSX.Element | null => {
+const cloudAndInfraSkills = [
+  'Vercel',
+  'AWS',
+  'Google Cloud',
+  'Firebase',
+  'Supabase',
+  'MongoDB',
+  'Docker',
+];
+
+const getIconPath = (skill: string) => `/images/icons/${skill.toLowerCase().replace(' ', '-')}.svg`;
+
+const Skills = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const skillsRef = useRef() as MutableRefObject<HTMLDivElement>;
-  const getIconPath = (skill: string) => `/images/icons/${skill.toLowerCase().replace(' ', '-')}.svg`;
-  const filteredSkills = skills.filter((skill) => skill.toLowerCase().includes(searchTerm.toLowerCase()),
-  );
+  const skillsRef = useRef<HTMLDivElement>(null);
+
+  const filteredSkills = (skills: string[]) => {
+    return skills.filter((skill) => skill.toLowerCase().includes(searchTerm.toLowerCase()));
+  };
+
+  const allSkills = {
+    core: filteredSkills(coreSkills),
+    production: filteredSkills(productionSkills),
+    cloudAndInfra: filteredSkills(cloudAndInfraSkills),
+  };
 
   // Ensure the section height does not jump around when filtering skills
   useEffect(() => {
+    if (!skillsRef.current) return;
     const sectionHeight = skillsRef.current.clientHeight;
     skillsRef.current.style.minHeight = `${sectionHeight}px`;
   }, []);
@@ -59,21 +65,70 @@ const Skills = (): JSX.Element | null => {
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Looking for something specific?"
         />
-        {searchTerm && (
-          <CancelIcon
-            className={styles.clear}
-            onClick={() => setSearchTerm('')}
-          />
-        )}
+        {searchTerm && <CancelIcon className={styles.clear} onClick={() => setSearchTerm('')} />}
       </div>
-      <ul className={styles.list}>
-        {filteredSkills.map((skill) => (
-          <li className={styles.skill} key={skill}>
-            <img width={16} height={16} src={getIconPath(skill)} alt={`${skill} icon`} loading="lazy" />
-            {skill}
-          </li>
-        ))}
-      </ul>
+
+      {allSkills.core.length > 0 && (
+        <div className={styles.group}>
+          <Chip>Core</Chip>
+          <ul className={styles.list}>
+            {allSkills.core.map((skill) => (
+              <li className={styles.skill} key={skill}>
+                <img
+                  width={16}
+                  height={16}
+                  src={getIconPath(skill)}
+                  alt={`${skill} icon`}
+                  loading="lazy"
+                />
+                {skill}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {allSkills.production.length > 0 && (
+        <div className={styles.group}>
+          <Chip>Production</Chip>
+
+          <ul className={styles.list}>
+            {allSkills.production.map((skill) => (
+              <li className={styles.skill} key={skill}>
+                <img
+                  width={16}
+                  height={16}
+                  src={getIconPath(skill)}
+                  alt={`${skill} icon`}
+                  loading="lazy"
+                />
+                {skill}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {allSkills.cloudAndInfra.length > 0 && (
+        <div className={styles.group}>
+          <Chip>Cloud & Infrastructure</Chip>
+
+          <ul className={styles.list}>
+            {allSkills.cloudAndInfra.map((skill) => (
+              <li className={styles.skill} key={skill}>
+                <img
+                  width={16}
+                  height={16}
+                  src={getIconPath(skill)}
+                  alt={`${skill} icon`}
+                  loading="lazy"
+                />
+                {skill}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
