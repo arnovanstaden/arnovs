@@ -31,6 +31,16 @@ const data: IExperienceItem[] = [
         </li>
 
         <li>
+          <span>Feature Planning & Delivery Ownership</span>
+          <p>
+            Planned and managed the frontend delivery of product features by breaking designs into
+            actionable tickets, coordinating work across relevant engineering teams, and
+            collaborating closely with design and product to refine requirements and provide
+            continuous feedback throughout implementation.
+          </p>
+        </li>
+
+        <li>
           <span>UI Library & Design System Migration (Owner)</span>
           <p>
             Owned and led the migration of existing applications to Zendesk’s shared UI library and
