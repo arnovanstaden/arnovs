@@ -75,7 +75,7 @@ const data: IExperienceItem[] = [
           <span>Platform Impact & Direction</span>
           <p>
             Helped shape Tandem’s web platform by improving core functionality, maintainability, and
-            overall user experience beyond day-to-day maintenance.
+            user experience across customer-facing surfaces.
           </p>
         </li>
       </ul>
@@ -138,10 +138,10 @@ const data: IExperienceItem[] = [
         </li>
 
         <li>
-          <span>Client Trust & Long-Term Partnerships</span>
+          <span>Repeat Client Engagements</span>
           <p>
-            Worked directly with 40+ clients to translate business goals into functional products,
-            earning repeat engagements through consistent delivery.
+            Delivered consistent, high-quality work for 40+ clients, resulting in long-term
+            partnerships and repeat engagements.
           </p>
         </li>
       </ul>

@@ -7,10 +7,10 @@ const About = () => (
     <div className={styles.text}>
       <Chip>Overview</Chip>
       <p>
-        Senior Frontend Engineer with a strong focus on <span>TypeScript</span> & <span>React</span>
-        , experienced in building and scaling production web applications used by thousands of
-        users. I enjoy taking ownership, working closely with product and design, and turning fuzzy
-        ideas into fast, reliable, user-friendly interfaces.
+        Senior Frontend Engineer with a strong focus on <span>TypeScript</span> and{' '}
+        <span>React</span>, experienced in building and scaling production web applications used by
+        thousands of users. Comfortable taking ownership, working closely with product and design,
+        and turning ambiguous requirements into fast, reliable, user-friendly interfaces.
       </p>
       <p>
         I’ve been hooked on computers since the Windows 98 and dial-up days, and I still approach
