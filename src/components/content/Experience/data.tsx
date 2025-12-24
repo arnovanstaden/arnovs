@@ -75,7 +75,7 @@ const data: IExperienceItem[] = [
           <span>Platform Impact & Direction</span>
           <p>
             Helped shape Tandem’s web platform by improving core functionality, maintainability, and
-            user experience across customer-facing surfaces.
+            user experience across customer-facing products.
           </p>
         </li>
       </ul>
