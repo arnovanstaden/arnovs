@@ -3,18 +3,16 @@
 .MobileNav {
   .mobileButton {
     @include reset-button;
-    border: 1.5px solid transparent;
     transition: 0.3s ease;
     display: none;
     justify-content: center;
     align-items: center;
-    width: 2rem;
-    height: 2rem;
-    background-color: var(--colour-background-secondary);
+    width: 1.75rem;
+    height: 1.75rem;
 
     svg {
       font-size: 1.5rem;
-      color: var(--colour-primary);
+      color: var(--colour-font-primary);
       transition: 0.3s ease;
     }
 

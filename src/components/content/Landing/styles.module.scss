@@ -100,9 +100,12 @@
       grid-template-columns: 1fr;
       padding-top: 6rem;
       padding-bottom: 2rem;
+      justify-items: center;
 
       .image {
         grid-row: 2/3;
+        max-width: 80vw;
+        justify-content: center;
 
         img {
           height: unset;
