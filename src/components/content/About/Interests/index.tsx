@@ -5,7 +5,6 @@ import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import CodeIcon from '@mui/icons-material/Code';
 import LocalAirportIcon from '@mui/icons-material/LocalAirport';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
-import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 import TranslateIcon from '@mui/icons-material/Translate';

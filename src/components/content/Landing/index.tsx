@@ -2,20 +2,18 @@ import Container from '@components/system/layout/Container';
 import styles from './styles.module.scss';
 import Button from '@components/system/Input/Button';
 import Chip from '@components/system/display/Chip';
-import TypingAnimation from './TypingAnimation';
 import Image from 'next/image';
 import Social from '@components/layout/Header/Social';
-import typingData from '@data/typings.json';
 import EmailIcon from '@mui/icons-material/Email';
 import DescriptionIcon from '@mui/icons-material/Description';
-import LandingImage from '@public/images/landing.png';
+import LandingImage from '@public/images/landing.webp';
 
 const Landing = () => (
   <section className={styles.Landing}>
     <Container>
       <div className={styles.grid}>
         <div className={styles.image}>
-          <Image src={LandingImage} alt="Arno van Staden" priority quality={60} />
+          <Image src={LandingImage} alt="Arno van Staden" priority quality={80} />
         </div>
         <div className={styles.content}>
           <Chip>Senior Frontend Engineer (React/TypeScript) </Chip>
