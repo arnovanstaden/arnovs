@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import NavList from '../NavList';
 import Social from '../Social';
 import styles from './styles.module.scss';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -16,7 +17,7 @@ const MobileNav = () => {
   const classes = classNames(styles.MobileNav, open && styles.open);
 
   return (
-    <nav className={classes}>
+    <div className={classes}>
       <button
         className={styles.mobileButton}
         onClick={() => handleNavToggle()}
@@ -38,10 +39,11 @@ const MobileNav = () => {
             </button>
           </div>
           <i className={`icon-clear ${styles.close}`} onClick={() => handleNavToggle()} />
+          <NavList onClick={handleNavToggle} />
           <Social className={styles.social} />
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 

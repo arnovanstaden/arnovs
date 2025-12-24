@@ -1,4 +1,6 @@
 import Logo from '@components/system/display/Logo';
+import MobileNav from './MobileNav';
+import NavList from './NavList';
 import ThemeToggle from './ThemeToggle';
 import styles from './styles.module.scss';
 import Link from 'next/link';
@@ -12,7 +14,11 @@ const Header = () => (
         van Staden
       </p>
     </Link>
-    <ThemeToggle />
+    <div className={styles.desktopNav}>
+      <NavList />
+      <ThemeToggle />
+    </div>
+    <MobileNav />
   </header>
 );
 
