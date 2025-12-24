@@ -22,48 +22,34 @@ const data: IExperienceItem[] = [
     description: (
       <ul>
         <li>
-          <span>Cross-Functional AI Feature Development</span>
+          <span>AI Feature Development & Delivery Ownership</span>
           <p>
-            Collaborated closely with Design, Product, and AI engineers to build and ship AI-powered
-            features, translating complex requirements into scalable, user-friendly frontend
-            solutions within Zendesk’s product ecosystem.
-          </p>
-        </li>
-
-        <li>
-          <span>Feature Planning & Delivery Ownership</span>
-          <p>
-            Planned and managed the frontend delivery of product features by breaking designs into
-            actionable tickets, coordinating work across relevant engineering teams, and
-            collaborating closely with design and product to refine requirements and provide
-            continuous feedback throughout implementation.
+            Owned frontend delivery of AI-powered features, working closely with Design, Product,
+            and AI engineers to plan, coordinate, and ship scalable, user-friendly solutions.
           </p>
         </li>
 
         <li>
           <span>UI Library & Design System Migration (Owner)</span>
           <p>
-            Owned and led the migration of existing applications to Zendesk’s shared UI library and
-            design system, driving consistency, accessibility, and long-term maintainability
-            following the post-acquisition transition.
+            Led the migration of applications to Zendesk’s shared UI library and design system,
+            improving consistency, accessibility, and long-term maintainability post-acquisition.
           </p>
         </li>
 
         <li>
           <span>Testing & Quality Enablement</span>
           <p>
-            Proactively introduced and scaled frontend testing practices, including unit and
-            end-to-end tests, helping establish quality standards required in a large corporate
-            environment and improving confidence in ongoing development and releases.
+            Introduced and scaled frontend testing practices, including unit and end-to-end tests,
+            helping establish quality standards and increase confidence in releases.
           </p>
         </li>
 
         <li>
           <span>Mentorship & Technical Leadership</span>
           <p>
-            Mentored junior engineers through code reviews, pairing, and day-to-day technical
-            guidance, contributing to improved code quality, shared ownership, and overall team
-            growth.
+            Mentored junior engineers through code reviews and pairing, contributing to higher code
+            quality, shared ownership, and overall team growth.
           </p>
         </li>
       </ul>
@@ -78,18 +64,18 @@ const data: IExperienceItem[] = [
     description: (
       <ul>
         <li>
-          <span>Elevated Leadership</span>
+          <span>Technical & Product Leadership</span>
           <p>
-            Stepped into a prominent role in technology selection, work prioritization, and backlog
-            management, often resembling the responsibilities of a product owner or manager for
-            web-based projects.
+            Took ownership of frontend technical decisions, prioritization, and backlog planning,
+            effectively operating at the intersection of engineering and product.
           </p>
         </li>
+
         <li>
-          <span>Strategic Impact</span>
+          <span>Platform Impact & Direction</span>
           <p>
-            Played a crucial role in shaping Tandem's web presence, ensuring not only maintenance
-            but also the enhancement of the platform's functionality and user experience.
+            Helped shape Tandem’s web platform by improving core functionality, maintainability, and
+            overall user experience beyond day-to-day maintenance.
           </p>
         </li>
       </ul>
@@ -106,35 +92,24 @@ const data: IExperienceItem[] = [
         <li>
           <span>Website & Web App Overhaul</span>
           <p>
-            Led the refactoring of the company website and oversaw the complete redevelopment &
-            redesign of the web application, supporting thousands of daily users with the latest web
-            technologies.
+            Led the refactor and redesign of the public website and web app, supporting thousands of
+            daily users with a modern, scalable frontend stack.
           </p>
         </li>
 
         <li>
-          <span>Admin Dashboard Refactoring</span>
+          <span>Admin Tools & Internal Systems</span>
           <p>
-            Rebuilt a rudimentary admin interface into a user-centric full-stack application from
-            the ground up, delivering a more intuitive, modern, and user-friendly experience.
+            Rebuilt internal admin tooling into a user-friendly full-stack application, improving
+            usability and efficiency for internal teams.
           </p>
         </li>
 
         <li>
-          <span>Cross-Functional Collaboration</span>
+          <span>Cross-Functional Delivery & Prototyping</span>
           <p>
-            Worked hand-in-hand with product, design, and marketing teams, transforming creative
-            concepts into technical solutions using a diverse tech stack like TypeScript, React, and
-            Next.js.
-          </p>
-        </li>
-
-        <li>
-          <span>Rapid Prototyping</span>
-          <p>
-            Led the swift development of MVPs for experimentation and feasibility testing. In
-            addition, implemented web-based solutions for special, niche projects and use cases,
-            thereby maximising the potential of the web platform.
+            Collaborated closely with product, design, and marketing to prototype MVPs and deliver
+            web-based solutions for new ideas and niche use cases.
           </p>
         </li>
       </ul>
@@ -147,43 +122,26 @@ const data: IExperienceItem[] = [
     description: (
       <ul>
         <li>
-          <span>Comprehensive Development</span>
+          <span>End-to-End Product Development</span>
           <p>
-            Managed the complete development lifecycle, ensuring websites and applications were
-            responsive, cross-browser compatible, and seamlessly integrated with robust backend
-            systems.
+            Delivered full-stack websites and applications from concept to launch, ensuring
+            responsive, cross-browser experiences and solid backend integration.
           </p>
         </li>
 
         <li>
-          <span>Extensive Portfolio Development</span>
+          <span>High-Volume Client Work</span>
           <p>
-            Delivered 45+ diverse websites and applications leveraging Next.js, React, TypeScript,
-            and CSS modules.
+            Built and shipped 45+ websites and applications using modern frontend technologies
+            including React, Next.js, and TypeScript.
           </p>
         </li>
 
         <li>
-          <span>Building Client Trust</span>
+          <span>Client Trust & Long-Term Partnerships</span>
           <p>
-            Fostered enduring partnerships with 40+ clients, with repeat engagements underscoring
-            consistent quality and trustworthiness.
-          </p>
-        </li>
-
-        <li>
-          <span>Client-Centric Solutions</span>
-          <p>
-            Worked closely with clients to align projects with their brand and objectives,
-            translating designs into fully functional digital platforms.
-          </p>
-        </li>
-
-        <li>
-          <span>Ongoing Improvements</span>
-          <p>
-            Consistently optimized and expanded applications, and provided expert technical
-            consultation on application design and feasibility.
+            Worked directly with 40+ clients to translate business goals into functional products,
+            earning repeat engagements through consistent delivery.
           </p>
         </li>
       </ul>
@@ -199,7 +157,7 @@ const data: IExperienceItem[] = [
     company: 'Apax English',
     description: (
       <p>
-        I traveled throughout South-East Asia, obtaining my TEFL certificate, and teaching English
+        I travelled throughout South-East Asia, obtaining my TEFL certificate, and teaching English
         as a second language to Vietnamese students.
       </p>
     ),
