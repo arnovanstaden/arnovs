@@ -8,16 +8,16 @@
   --colour-font-secondary: #c5cdd3;
 
   @media screen and (prefers-color-scheme: light) {
-    --colour-background-primary: #e4e4e4;
-    --colour-background-secondary: #cec6c6;
+    --colour-background-primary: #ececec;
+    --colour-background-secondary: #d7d7d7;
     --colour-font-primary: #1f2123;
     --colour-font-secondary: #151618;
   }
 }
 
 [data-theme='light'] {
-  --colour-background-primary: #e4e4e4;
-  --colour-background-secondary: #cec6c6;
+  --colour-background-primary: #ececec;
+  --colour-background-secondary: #d7d7d7;
   --colour-font-primary: #1f2123;
   --colour-font-secondary: #151618;
 }
