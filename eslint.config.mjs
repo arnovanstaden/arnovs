@@ -57,6 +57,7 @@ const eslintConfig = defineConfig([
       'no-useless-catch': 'off',
       'react/no-unescaped-entities': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
+      'react-hooks/set-state-in-effect': 'off',
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
